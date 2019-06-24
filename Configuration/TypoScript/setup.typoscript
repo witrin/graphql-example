@@ -1,0 +1,28 @@
+plugin.tx_example {
+  features.requireCHashArgumentForActionArguments = 0
+}
+
+graphql = PAGE
+graphql {
+  config {
+    disableAllHeaderCode = 1
+    debug = 0
+    no_cache = 1
+    additionalHeaders {
+      10 {
+        header = Content-Type: application/json
+        replace = 1
+      }
+    }
+  }
+  typeNum = 1561325893
+  10 = USER_INT
+  10 {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    vendorName = Vendor
+    pluginName = Pi1
+    extensionName = Example
+    controller = Gql
+    action = query
+  }
+}
