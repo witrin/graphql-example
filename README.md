@@ -6,11 +6,16 @@ This extension shows how the [GraphQL integration](https://github.com/typo3-init
 
 ## Installation
 
-Install the [latest development of TYPO3 CMS](https://packagist.org/packages/typo3/cms-base-distribution#dev-master) using [Composer](https://getcomposer.org/). In your project root add this repository and a dependency to this package:
+Install the [latest development of TYPO3 CMS](https://packagist.org/packages/typo3/cms-base-distribution#dev-master) using [Composer](https://getcomposer.org/), add the dependend repositories and add this package as a dependency:
 
 ```bash
+composer create-project typo3/cms-base-distribution:dev-master .
+composer config minimum-stability dev
+composer config repositories.cms-configuration git https://github.com/typo3-initiatives/configuration
+composer config repositories.cms-security git https://github.com/typo3-initiatives/security
+composer config repositories.cms-graphql git https://github.com/typo3-initiatives/graphql
 composer config repositories.graphql-example git https://github.com/witrin/graphql-example
-composer require example/graphql
+composer require example/graphql:dev-master
 ```
 
 Include the static template `GraphQL API` into your root template.
