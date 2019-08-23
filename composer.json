@@ -10,8 +10,8 @@
         }
     ],
     "require": {
-        "typo3/cms-graphql": "10.0.*@dev",
-        "typo3/cms-extbase": "10.0.*@dev"
+        "typo3/cms-graphql": "10.1.*@dev",
+        "typo3/cms-extbase": "10.1.*@dev"
     },
     "replace": {
         "example/graphql": "self.version"
