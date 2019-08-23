@@ -14,7 +14,7 @@
         "typo3/cms-extbase": "10.1.*@dev"
     },
     "replace": {
-        "example/graphql": "self.version"
+        "example": "self.version"
     },
     "autoload": {
         "psr-4": {
