@@ -18,14 +18,17 @@ composer config repositories.graphql-example git https://github.com/witrin/graph
 composer require example/graphql:dev-master
 ```
 
-Include the static template `GraphQL API` into your root template.
-
 ## Usage
 
-Use the following URL and replace `<query>` withour your GraphQL query:
+Use POST your GraphQL queries to `/api`. The content type must be `application/json` with the following body:
 
 ```
-/?type=1561325893&tx_example_pi1[query]=<query>
+{
+    "variables": {
+        ...
+    },
+    "query": "..."
+}
 ```
 
 For more detailed information about the integration of GraphQL checkout the [draft](https://docs.google.com/document/d/1M-V9H9W_tmWZI-Be9Zo5xTZUMgwJk2dMUxOFw-waO04/) and its [latest development](https://github.com/typo3-initiatives/graphql).
