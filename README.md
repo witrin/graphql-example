@@ -20,7 +20,7 @@ composer require example/graphql:dev-master
 
 ## Usage
 
-Use POST your GraphQL queries to `/api`. The content type must be `application/json` with the following body:
+Use HTTP POST at `/api` for your GraphQL queries. The `Content-Type` must be `application/json` with the following body:
 
 ```
 {
@@ -31,6 +31,6 @@ Use POST your GraphQL queries to `/api`. The content type must be `application/j
 }
 ```
 
-The language aspect of your query can be set through the HTTP header `Accept-Language` but only the first entry will be processed if set (e.g. `Accept-Language: de-CH`).
+The language aspect of your query can be set through the HTTP header `Accept-Language` but only the first entry will be processed if set (e.g. `Accept-Language: en-US`).
 
 For more detailed information about the integration of GraphQL checkout the [draft](https://docs.google.com/document/d/1M-V9H9W_tmWZI-Be9Zo5xTZUMgwJk2dMUxOFw-waO04/) and its [latest development](https://github.com/typo3-initiatives/graphql).
