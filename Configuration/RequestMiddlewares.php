@@ -3,7 +3,7 @@
 return [
     'frontend' => [
         'example/graphql' => [
-            'target' => \Vendor\Example\Middleware\ApiEndpoint::class,
+            'target' => \Vendor\Example\Middleware\QueryEndpoint::class,
             'after' => [
                 'typo3/cms-frontend/site',
                 'typo3/cms-frontend/authentication',

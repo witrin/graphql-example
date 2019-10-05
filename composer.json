@@ -10,7 +10,8 @@
         }
     ],
     "require": {
-        "typo3/cms-graphql": "10.1.*@dev"
+        "typo3/cms-graphql": "10.1.*@dev",
+        "symfony/serializer": "4.4.x-dev"
     },
     "replace": {
         "example": "self.version"

@@ -1,0 +1,6 @@
+profiles:
+  # is used when no matching profile was found
+  default:
+    tt_content:
+      bodytext: 
+        - 'html'

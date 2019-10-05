@@ -6,3 +6,16 @@ services:
 
   Vendor\Example\:
     resource: '../Classes/*'
+
+  Vendor\Example\Data\HtmlProcessor:
+    tags:
+      -
+        name: graphql.processor
+        identifier: 'html'
+
+  Vendor\Example\Data\ResultHandler:
+    tags:
+      -
+        name: event.listener
+        identifier: 'vendor-example-result'
+        event: TYPO3\CMS\GraphQL\Event\AfterValueResolvingEvent
